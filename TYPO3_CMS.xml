@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="TYPO3 CMS">
+  <template name="seldebug" value="t3lib_utility_Debug::debug($SELECTION$, __FILE__ . __LINE__);" description="t3lib_utility_Debug" toReformat="false" toShortenFQNames="true">
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CoffeeScript" value="false" />
+    </context>
+  </template>
+  <template name="t3evd" value="Tx_Extbase_Utility_Debugger::var_dump($END$);" description="Tx_Extbase_Utility_Debugger" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CoffeeScript" value="false" />
+    </context>
+  </template>
+  <template name="devlog" value="t3lib_div::devLog('$info$', 'bilfingeracademy',$severity$);" description="t3lib_div::devLog" toReformat="false" toShortenFQNames="true">
+    <variable name="info" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="severity" expression="enum(&quot;0&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CoffeeScript" value="false" />
+    </context>
+  </template>
+  <template name="test" value="/**&#10; * @test&#10; */&#10;public function $methodName$() {&#10;&#9;$end$&#10;}" description="Method for a Testcase" toReformat="false" toShortenFQNames="true">
+    <variable name="methodName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CoffeeScript" value="false" />
+    </context>
+  </template>
+  <template name="debug" value="t3lib_utility_Debug::debug($$$var$, __FILE__ . __LINE__);" description="t3lib_utility_Debug" toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CoffeeScript" value="false" />
+    </context>
+  </template>
+  <template name="syslog" value="t3lib_div::sysLog('$MESSAGE$', 'tx_bilfingeracademy', t3lib_div::SYSLOG_SEVERITY_INFO);" description="t3lib_div::sysLog" toReformat="false" toShortenFQNames="true">
+    <variable name="MESSAGE" expression="enum(&quot;blubb&quot;,&quot;flupp2&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CoffeeScript" value="false" />
+    </context>
+  </template>
+  <template name="execselect" value="&#9;&#9;$select_fields = $select$;&#10;&#9;&#9;$from_table = $from$;&#10;&#9;&#9;$where_clause = $where$;&#10;&#10;&#9;&#9;$res = $GLOBALS['TYPO3_DB']-&gt;exec_SELECTquery($select_fields, $from_table, $where_clause);&#10;&#10;&#9;&#9;while($row = $GLOBALS['TYPO3_DB']-&gt;sql_fetch_assoc($res)) {&#10;&#9;&#9;&#9;$END$&#10;&#9;&#9;}&#10;" description="$GLOBALS['TYPO3_DB']-&gt;exec_SELECTquery" toReformat="false" toShortenFQNames="true">
+    <variable name="select" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="from" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="where" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="selcreate" value="$this-&gt;objectManager-&gt;create($SELECTION$);" description="$this-&gt;objectManager-&gt;create" toReformat="false" toShortenFQNames="true">
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="selget" value="$this-&gt;objectManager-&gt;get($SELECTION$);" description="$this-&gt;objectManager-&gt;get" toReformat="false" toShortenFQNames="true">
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="XML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HTML" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HTML_TEXT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="SQL" value="false" />
+    </context>
+  </template>
+  <template name="inj" value="@Flow\Inject" description="@Flow\Inject" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+</templateSet>
+

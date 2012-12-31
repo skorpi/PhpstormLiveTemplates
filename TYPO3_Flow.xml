@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="TYPO3 Flow">
+  <template name="inject" value="@Flow\Inject" description="@Flow\Inject" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="advice" value="/**&#10; * $comment$&#10; *&#10; * @param \TYPO3\Flow\AOP\JoinPointInterface $joinPoint&#10; * @Flow\$declaration$(&quot;$designator$($pointcutexpression$)&quot;)&#10; */&#10;public function $methodName$(\TYPO3\Flow\AOP\JoinPointInterface $joinPoint){&#10;&#9;$$$argument$ = $joinPoint-&gt;getMethodArgument('$argument$');&#10;&#9;$END$&#10;}" description="Add an advice method to an aspect" toReformat="false" toShortenFQNames="true">
+    <variable name="comment" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="declaration" expression="enum(&quot;Before&quot;,&quot;AfterReturning&quot;,&quot;AfterThrowing&quot;,&quot;After&quot;,&quot;Around&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="designator" expression="enum(&quot;method&quot;,&quot;class&quot;,&quot;within&quot;,&quot;classAnnotatedWith&quot;,&quot;methodAnnotatedWith&quot;,&quot;setting&quot;,&quot;evaluate&quot;,&quot;filter&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="pointcutexpression" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="methodName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="argument" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="vardump" value="\TYPO3\Flow\var_dump($END$, __DIR__ . __FILE__ . __LINE__);" description="\TYPO3\Flow\var_dump" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+</templateSet>
+
