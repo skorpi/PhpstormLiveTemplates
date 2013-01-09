@@ -160,7 +160,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="construct" value="/**&#10; * Constructs this model&#10; */&#10;public function __construct(){&#10;&#9;parent::__construct();&#10;&#9;$this-&gt;$END$ = new \Doctrine\Common\Collections\ArrayCollection();&#10;}" description="Constructor with ArrayCollection initialization" toReformat="false" toShortenFQNames="true">
+  <template name="construct" value="/**&#10; * Constructs this model&#10; */&#10;public function __construct(){&#10;&#9;parent::__construct();&#10;&#9;&#10;&#9;$this-&gt;$END$ = new \Doctrine\Common\Collections\ArrayCollection();&#10;}" description="Constructor with ArrayCollection initialization" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -180,6 +180,109 @@
     </context>
   </template>
   <template name="identity" value="@Flow\Identity" description="@Flow\Identity" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="onetomanyattr" value="/**&#10; * The $variable$s&#10; *&#10; * @var \Doctrine\Common\Collections\Collection&lt;\$model$\$ucvariable$&gt;&#10; * @ORM\OneToMany(mappedBy=&quot;$mappedbyfield$&quot;)&#10; * @ORM\OrderBy({&quot;$orderbyfield$&quot; = &quot;$order$&quot;})&#10; */&#10;protected $$$variable$s;&#10;&#10;$end$$this-&gt;$variable$s = new \Doctrine\Common\Collections\ArrayCollection();&#10;&#10;/**&#10; * Adds a $variable$&#10; *&#10; * @param \$model$ $$$variable$&#10; * @return void&#10; */&#10;public function add$ucvariable$(\$model$\$ucvariable$ $$$variable$) {&#10;&#9;$$$variable$-&gt;set$ucmappedbyfield$($this);&#10;&#9;$this-&gt;$variable$s-&gt;add($$$variable$);&#10;}&#10;&#10;/**&#10; * Removes a $variable$&#10; *&#10; * @param \$model$\$ucvariable$ $$$variable$&#10; * @return void&#10; */&#10;public function remove$ucvariable$(\$model$\$ucvariable$ $$$variable$) {&#10;&#9; $this-&gt;$variable$s-&gt;removeElement($$$variable$);&#10;}&#10;&#10;/**&#10; * Returns all $variable$s&#10; *&#10; * @return \Doctrine\Common\Collections\Collection&lt;\$model$\$ucvariable$&gt; The $variable$s&#10; */&#10;public function get$ucvariable$s() {&#10;&#9; return $this-&gt;$variable$s;&#10;}" description="Collection attribute with all neccessary methods like add, remove etc." toReformat="false" toShortenFQNames="true">
+    <variable name="variable" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="model" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="mappedbyfield" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="orderbyfield" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="order" expression="enum(&quot;ASC&quot;,&quot;DESC&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ucvariable" expression="capitalize(variable)" defaultValue="" alwaysStopAt="true" />
+    <variable name="ucmappedbyfield" expression="capitalize(mappedbyfield)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="dm" value="Domain\Model\" description="Domain\Model\" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="dmr" value="Domain\Model\Repository\" description="Domain\Model\Repository\" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="clearstate" value="$this-&gt;persistenceManager-&gt;clearState();" description="$this-&gt;persistenceManager-&gt;clearState();" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="persistall" value="$this-&gt;persistenceManager-&gt;persistAll();" description="$this-&gt;persistenceManager-&gt;persistAll();" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
