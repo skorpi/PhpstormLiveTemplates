@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<templateSet group="TYPO3 Flow">
+<templateSet group="TYPO3 Flow Validators">
   <template name="validate" value="@Flow\Validate(type=&quot;$validator$&quot;)" description="@Flow\Validate(type=&quot;&quot;)" toReformat="false" toShortenFQNames="true">
     <variable name="validator" expression="enum(&quot;Number&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
