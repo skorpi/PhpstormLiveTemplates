@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="TYPO3 Flow Validators">
   <template name="validate" value="@Flow\Validate(type=&quot;$validator$&quot;)" description="@Flow\Validate(type=&quot;&quot;)" toReformat="false" toShortenFQNames="true">
-    <variable name="validator" expression="enum(&quot;Number&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="validator" expression="enum(&quot;Number&quot;, &quot;DateTime&quot;, &quot;NotEmpty&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -25,6 +25,29 @@
     <variable name="strictMode" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="formatLength" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="formatType" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="DateTime" value="DateTime&quot;, locale=&quot;$locale$&quot;, strictMode=&quot;$strictMode$&quot;, formatLength=&quot;$formatLength$&quot;, formatType=&quot;$formatType$" description="Properties of the &quot;DateTime&quot; validator" toReformat="false" toShortenFQNames="true">
+    <variable name="locale" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="strictMode" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="formatLength" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="formatType" expression="enum(&quot;FORMAT_TYPE_DATE&quot;,&quot;FORMAT_TYPE_TIME&quot;,&quot;FORMAT_TYPE_DATETIME&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />

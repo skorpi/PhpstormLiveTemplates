@@ -44,7 +44,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="vardump" value="\TYPO3\Flow\var_dump($END$, __DIR__ . __FILE__ . __LINE__);" description="\TYPO3\Flow\var_dump" toReformat="false" toShortenFQNames="true">
+  <template name="vard" value="\TYPO3\Flow\var_dump($END$, __DIR__ . __FILE__ . __LINE__);" description="\TYPO3\Flow\var_dump" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
