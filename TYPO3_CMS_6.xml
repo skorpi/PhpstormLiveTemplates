@@ -59,10 +59,30 @@
       <option name="CoffeeScript" value="false" />
     </context>
   </template>
-  <template name="devlog" value="\TYPO3\CMS\Core\Utility\GeneralUtility::devlog('$info$', '$extension$',$severity$);" description="GeneralUtility::devlog();" toReformat="false" toShortenFQNames="true">
+  <template name="devlog" value="\TYPO3\CMS\Core\Utility\GeneralUtility::devlog('$info$','$extension$',$severity$);" description="GeneralUtility::devlog();" toReformat="false" toShortenFQNames="true">
     <variable name="info" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="extension" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="severity" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="eidconnectdb" value="\TYPO3\CMS\Frontend\Utility\EidUtility::connectDB();$end$" description="EidUtility::connectDB()" toReformat="false" toShortenFQNames="true">
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
