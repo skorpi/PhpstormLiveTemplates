@@ -20,7 +20,7 @@
       <option name="CoffeeScript" value="false" />
     </context>
   </template>
-  <template name="evd" value="Tx_Extbase_Utility_Debugger::var_dump($END$);" description="Tx_Extbase_Utility_Debugger" toReformat="false" toShortenFQNames="true">
+  <template name="edebug" value="Tx_Extbase_Utility_Debugger::var_dump($END$);" description="Tx_Extbase_Utility_Debugger" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
